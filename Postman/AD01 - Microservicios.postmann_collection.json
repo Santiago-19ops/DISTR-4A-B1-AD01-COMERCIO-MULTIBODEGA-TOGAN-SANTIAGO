@@ -1,0 +1,1206 @@
+{
+  "info": {
+    "_postman_id": "56f4ca43-e29a-43af-9beb-df0395fb3c24",
+    "name": "AD01 - Microservicios",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "60077336",
+    "_collection_link": "https://go.postman.co/collection/60077336-56f4ca43-e29a-43af-9beb-df0395fb3c24?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Catalogo.Api",
+      "item": [
+        {
+          "name": "Categorias",
+          "item": [
+            {
+              "name": "GET - Consultar Categorias",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Categorias",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Categorias"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar Categoria por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Categorias/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Categorias",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar Categoria",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idCategoria\": 0,\r\n  \"nombre\": \"Tablets de Prueba\",\r\n  \"descripcion\": \"Categoria creada para realizar pruebas en Postman\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7257/api/Categorias",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Categorias"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar Categoria",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idCategoria\": 2,\r\n  \"nombre\": \"Tablets Actualizadas\",\r\n  \"descripcion\": \"Categoria actualizada desde Postman\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7257/api/Categorias/2",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Categorias",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar Categoria",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Categorias/1001",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Categorias",
+                    "1001"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Productos",
+          "item": [
+            {
+              "name": "PUT - Actualizar Producto.",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idProducto\": 3,\r\n  \"idCategoria\": 1,\r\n  \"idMarca\": 2,\r\n  \"nombre\": \"Laptop Lenovo de Prueba\",\r\n  \"sku\": \"LEN-TEST-001\",\r\n  \"precio\": 680.00,\r\n  \"estado\": true\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7257/api/Productos/3",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Productos",
+                    "3"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Consultar Productos",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Productos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Productos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar Producto.",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idProducto\": 0,\r\n  \"idCategoria\": 1,\r\n  \"idMarca\": 2,\r\n  \"nombre\": \"Laptop Lenovo de Prueba\",\r\n  \"sku\": \"LEN-TEST-001\",\r\n  \"precio\": 650.00,\r\n  \"estado\": true\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7257/api/Productos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Productos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar Producto",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Productos/3",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Productos",
+                    "3"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar Producto por ID.",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Productos/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Productos",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Marcas",
+          "item": [
+            {
+              "name": "GET - Consultar Marcas",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Marcas",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Marcas"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar Marca por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Marcas/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Marcas",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar Marca",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idMarca\": 0,\r\n  \"nombre\": \"HP de Prueba\",\r\n  \"paisOrigen\": \"Estados Unidos\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7257/api/Marcas",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Marcas"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar Marca",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idMarca\": 1001,\r\n  \"nombre\": \"HP Actualizada\",\r\n  \"paisOrigen\": \"Estados Unidos\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7257/api/Marcas/1001",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Marcas",
+                    "1001"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar Marca",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Marcas/1001",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Marcas",
+                    "1001"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Validaciones HTTP",
+          "item": [
+            {
+              "name": "GET - Validar Producto No Encontrado",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7257/api/Productos/999999",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7257",
+                  "path": [
+                    "api",
+                    "Productos",
+                    "999999"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Validar Datos Incorrectos",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inventario.Api",
+      "item": [
+        {
+          "name": "Bodegas",
+          "item": [
+            {
+              "name": "GET - Consultar Bodegas",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/Bodegas",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Bodegas"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar Bodega por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/Bodegas/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Bodegas",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar Bodega",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idBodega\": 0,\r\n  \"nombre\": \"Bodega de Prueba\",\r\n  \"ciudad\": \"Quito\",\r\n  \"direccion\": \"Av. Amazonas y Naciones Unidas\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7183/api/Bodegas",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Bodegas"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar Bodega",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idBodega\": 4,\r\n  \"nombre\": \"Bodega Actualizada\",\r\n  \"ciudad\": \"Quito\",\r\n  \"direccion\": \"Av. 6 de Diciembre\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7183/api/Bodegas/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Bodegas",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar Bodega",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/Bodegas/4",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Bodegas",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Existencias",
+          "item": [
+            {
+              "name": "GET — Consultar Existencias",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/Existencias",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Existencias"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar Existencia por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/Existencias/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Existencias",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST — Agregar Existencia",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/Existencias",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Existencias"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar Existencia",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idExistencia\": 2,\r\n  \"idProducto\": 1,\r\n  \"idBodega\": 3,\r\n  \"stock\": 50\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7183/api/Existencias/2",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Existencias",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar Existencia",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "MovimientosInventario",
+          "item": [
+            {
+              "name": "GET - Consultar MovimientosInventario",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/MovimientosInventario",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "MovimientosInventario"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar Movimiento por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar MovimientoInventario",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idMovimiento\": 0,\r\n  \"idProducto\": 1,\r\n  \"idBodega\": 3,\r\n  \"tipo\": \"Entrada\",\r\n  \"cantidad\": 10,\r\n  \"fecha\": \"2026-11-10T17:30:00\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7183/api/MovimientosInventario",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "MovimientosInventario"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar MovimientoInventario",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar MovimientoInventario",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "ReservasStock",
+          "item": [
+            {
+              "name": "GET - Consultar ReservasStock",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/ReservasStock",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "ReservasStock"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar ReservaStock por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar ReservaStock",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar ReservaStock",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar ReservaStock",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Validaciones HTTP",
+          "item": [
+            {
+              "name": "GET - Validar Bodega No Encontrada",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7183/api/Bodegas/999999",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7183",
+                  "path": [
+                    "api",
+                    "Bodegas",
+                    "999999"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pedidos.Api",
+      "item": [
+        {
+          "name": "Clientes",
+          "item": [
+            {
+              "name": "GET - Consultar Clientes",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7001/api/Clientes",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "Clientes"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar Cliente por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7001/api/Clientes/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "Clientes",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar Cliente",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idCliente\": 0,\r\n  \"nombres\": \"Carlos Ramirez\",\r\n  \"cedula\": \"1712345678\",\r\n  \"correo\": \"carlos.prueba@example.com\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7001/api/Clientes",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "Clientes"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar Cliente",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idCliente\": 2,\r\n  \"nombres\": \"Carlos Andres Ramirez\",\r\n  \"cedula\": \"1712345678\",\r\n  \"correo\": \"carlos.actualizado@example.com\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7001/api/Clientes/2",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "Clientes",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar Cliente",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Pedidos",
+          "item": [
+            {
+              "name": "GET - Consultar Pedidos",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7001/api/Pedidos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "Pedidos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar Pedido por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar Pedido",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7001/api/Pedidos",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "Pedidos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar Pedido",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idPedido\": 2,\r\n  \"idCliente\": 1,\r\n  \"fecha\": \"2026-11-10T18:30:00\",\r\n  \"total\": 500.00,\r\n  \"estado\": \"Confirmado\"\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7001/api/Pedidos/2",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "Pedidos",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar Pedido",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "DetallesPedido",
+          "item": [
+            {
+              "name": "GET - Consultar DetallesPedido",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Buscar DetallePedido por ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "POST - Agregar DetallePedido",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PUT - Actualizar DetallePedido",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n{\r\n  \"idDetalle\": 1,\r\n  \"idPedido\": 1,\r\n  \"idProducto\": 1,\r\n  \"cantidad\": 2,\r\n  \"precioUnitario\": 750.00\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://localhost:7001/api/DetallesPedido/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "DetallesPedido",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE - Eliminar DetallePedido",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7001/api/DetallesPedido/1",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "DetallesPedido",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Validaciones HTTP",
+          "item": [
+            {
+              "name": "POST - Validar Cedula Incorrecta",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET - Validar Cliente No Encontrado",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7001/api/Clientes/999999",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7001",
+                  "path": [
+                    "api",
+                    "Clientes",
+                    "999999"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
